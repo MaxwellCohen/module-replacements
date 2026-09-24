@@ -108,6 +108,12 @@
       "description": "You can use a ternary operator and string concatenation to add a trailing `.0`.",
       "example": "const comverToSemver = (comver) => comver.includes('.') ? `${comver}.0` : `${comver}.0.0`"
     },
+    "snippet::english-days": {
+      "id": "snippet::english-days",
+      "type": "simple",
+      "description": "You can use an array of English weekday names instead of a dependency.",
+      "example": "const days = [ \"sunday\", \"monday\", \"tuesday\", \"wednesday\", \"thursday\", \"friday\", \"saturday\" ]"
+    },
     "snippet::find-first-defined": {
       "id": "snippet::find-first-defined",
       "type": "simple",
@@ -736,6 +742,11 @@
       "type": "module",
       "moduleName": "defined",
       "replacements": ["snippet::find-first-defined"]
+    },
+    "english-days": {
+      "type": "module",
+      "moduleName": "english-days",
+      "replacements": ["snippet::english-days"]
     },
     "es-get-iterator": {
       "type": "module",
